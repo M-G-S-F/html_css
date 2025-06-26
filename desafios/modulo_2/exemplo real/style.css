@@ -1,0 +1,21 @@
+body {
+    background-image: linear-gradient(to top, #3A606E, #607B7D, #828E82);
+    background-attachment: fixed;
+}
+
+main {
+    background-image: linear-gradient(to top, #E0E0E0 80%, #C3E9E9);
+    padding: 20px;
+    border: 1px solid #E0E0E0;
+    border-radius: 20px;
+    box-shadow: 3px 3px 15px #a5a5a550;
+}
+
+h1, h2, p{
+    text-align: center;
+    font-family: sans-serif;
+}
+
+div:hover p {
+    background-color: blue;
+}
