@@ -52,9 +52,17 @@ main p {
 @media (max-width: 625px) {
     header {
         flex-flow: column nowrap;
+        padding: 0;
     }
 
     nav {
         flex-flow: column nowrap;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 0;
+        width: 100vh;
+        text-align: center;
     }
 }
