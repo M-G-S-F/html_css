@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+</head>
+    <style>
+        body {
+            height: 100vh;
+        }
+
+        main {
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template: repeat(10, 1fr) / repeat(4, 1fr);
+        }
+
+        header {
+            grid-area: 1 / 1 / 3 / 5;
+            background-color: rgb(255, 204, 136);
+        }
+
+        nav {
+            grid-area: 3 / 1 / 4 / 5;;
+            background-color: aquamarine;
+        }
+
+        article {
+            grid-area: 4 / 1 / span 6 / 4;
+            background-color: blueviolet;
+        }
+
+        aside {
+            grid-area: 4 / 4 / span 6 / 5;
+            background-color: brown;
+        }
+
+        footer {
+            grid-area: -2 / 1 / span 1 / span 4;
+            background-color: rgb(255, 211, 152);
+        }
+    </style>
+<body>
+    <main>
+        <header>
+            Topo
+        </header>
+
+        <nav>
+            Menu
+        </nav>
+
+        <article>
+            Principal
+        </article>
+
+        <aside>
+            Secundario
+        </aside>
+
+        <footer>
+            Rodape
+        </footer>
+    </main>
+</body>
+</html>
